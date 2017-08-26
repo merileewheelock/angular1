@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	Name: <input type="text" id="aTextBox" />
+	<hr />
+	Hello, <span id="nameText"></span>!
+
+
+	<script type="text/javascript">
+		var textBox = document.getElementById('aTextBox');
+		textBox.addEventListener('keyup', (event)=>{
+			// console.log(event)
+			var text = event.target.value
+			// console.log(text)
+			document.getElementById('nameText').innerHTML = text
+		})
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+</body>
+</html>
